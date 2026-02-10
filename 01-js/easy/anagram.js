@@ -12,13 +12,12 @@ function isAnagram(str1, str2) {
       return false;
   }
 
-
-  function sortString(str) {
-      return str.toLowerCase().split('').sort().join('');
+  function sortString(stringToBeSorted){
+    return stringToBeSorted.toLowerCase().split('').sort().join('')
   }
 
-
+  console.log(sortString(str1))
   return sortString(str1) === sortString(str2);
 }
-
+isAnagram("abcdef","acbdfe")
 module.exports = isAnagram;
